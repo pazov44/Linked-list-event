@@ -1,0 +1,17 @@
+\doxysection{auth.\+h}
+\hypertarget{auth_8h_source}{}\label{auth_8h_source}\index{app/Business/include/auth.h@{app/Business/include/auth.h}}
+\mbox{\hyperlink{auth_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_auth}{Auth}}}
+\DoxyCodeLine{00004\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{comment}{//\ register\ a\ new\ user:\ name,pass}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespace_auth_a8b9cffaafe493ee045e7bd0f03b28f7f}{RegisterUser}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_user}{User}}\&\ data);}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{//\ log\ in\ an\ existing\ user}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespace_auth_ac9930332d9803f5ece41cb64fe9beeda}{LogUser}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_user}{User}}\&\ data);}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{//user\ folder\ dir}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{namespace_auth_ae9cc42226aacaed56f503d7226d6175e}{createUserDir}}\ =\ R\textcolor{stringliteral}{"{}(..\(\backslash\)Access\(\backslash\)Data\(\backslash\)Users\(\backslash\))"{};}}
+\DoxyCodeLine{00011\ \textcolor{stringliteral}{\}}}
+
+\end{DoxyCode}

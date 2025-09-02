@@ -1,0 +1,16 @@
+#pragma once
+#include <fstream>
+#include <iostream>
+#include <iomanip>
+#include <cstdlib>
+#include <vector>
+#include <string>
+#include "user.h"
+#include "auth.h"
+#include "find.h"
+#include "error.h"
+#include "event.h"
+#include <functional>
+#include "list.h"
+#include "utils.h"
+#include "global.h"

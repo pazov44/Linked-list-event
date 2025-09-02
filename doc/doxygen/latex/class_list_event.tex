@@ -1,0 +1,132 @@
+\doxysection{List\+Event Class Reference}
+\hypertarget{class_list_event}{}\label{class_list_event}\index{ListEvent@{ListEvent}}
+
+
+{\ttfamily \#include $<$list.\+h$>$}
+
+Inheritance diagram for List\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_list_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_list_event_a856af6e3292ab0b717bb01a75d753483}{Insert\+Date}} (const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{class_list_event_a7e39c2b2a3658b829e6357e802e2bfef}{Print\+Event}} () const
+\item 
+bool \mbox{\hyperlink{class_list_event_a0b687555eebd449a6ddeec40d91e3d2f}{Replace\+Event}} (const int \&pos, const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&data) const
+\item 
+bool \mbox{\hyperlink{class_list_event_acabac499eeb9d7d8c1ecd45c1b8e81ae}{Search\+Event}} (const int \&year, const std\+::string \&topic) const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_list}{List}}$<$ std\+::string $>$ $>$ \mbox{\hyperlink{class_list_event_addcad1ad7f1934e39382846ccf8c6c8b}{Name\+List}} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_list_event}{List\+Event}} $>$ \mbox{\hyperlink{class_list_event_a365b46c2b25f4c5bfcd6b98f6ab53d9f}{Event\+List}} (const std\+::string \&topic) const
+\item 
+void \mbox{\hyperlink{class_list_event_ae6bab079917ad71ab9063441e7c8f663}{Sort\+Events}} ()
+\item 
+bool \mbox{\hyperlink{class_list_event_a906c91f19f6f6867e069e9a925a2574c}{Is\+Sorted}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_list}{List$<$ Event\+Data $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_list_a6453911edf96eb29a260182a7d281d41}{Insert\+Pos}} (const int \&pos, const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&data)
+\item 
+\mbox{\hyperlink{class_list_a5c5e27671b21b3815d4e25b953c69454}{List}} ()
+\item 
+\mbox{\hyperlink{class_list_a2b58189090f6e5ce52939c9195e59e85}{\texorpdfstring{$\sim$}{\string~}\+List}} ()
+\item 
+void \mbox{\hyperlink{class_list_a8896cebc6a34a3fb844c99e29d3e2267}{Insert\+Front}} (const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&data)
+\item 
+void \mbox{\hyperlink{class_list_af27f945773c71ad27759ea5c16b66682}{Insert\+Back}} (const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&data)
+\item 
+bool \mbox{\hyperlink{class_list_a26ba102a1d57c2fc58a89a8ea946c61c}{Del\+Pos}} (const int \&pos)
+\item 
+bool \mbox{\hyperlink{class_list_a1f91a80ff30977e8ef3811c8ec61276b}{Del\+Front}} ()
+\item 
+bool \mbox{\hyperlink{class_list_ae4917ef8a51dc26cd1f60c8e1045253e}{Del\+Back}} ()
+\item 
+bool \mbox{\hyperlink{class_list_a84df3944410032ec41670cd60d0205dd}{Del\+All}} ()
+\item 
+const int \& \mbox{\hyperlink{class_list_ac128672908e6d296f12a6496c29cdd12}{Size}} () const
+\item 
+const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \& \mbox{\hyperlink{class_list_ab848ffd160d1bc3f55ff15be01fc8d08}{Get}} (const int \&pos) const
+\item 
+const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \& \mbox{\hyperlink{class_list_af4d55cd12673848ac3690e3077d1446e}{operator\mbox{[}$\,$\mbox{]}}} (const int \&pos) const
+\item 
+bool \mbox{\hyperlink{class_list_a16e0b41c6ba00715dad1243b3cdb09c3}{Is\+Empty}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_list}{List$<$ Event\+Data $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_list_a5a3156f18dbf7ae75451e28b7a524812}{Insert\+Pos}} (Node \texorpdfstring{$\ast$}{*}ppos, const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_list}{List$<$ Event\+Data $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+Node \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list_a0a9e94f044b5d7be7403b158310a140e}{head}}
+\item 
+Node \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list_a460f0ca9474428fd1d4c89cc163a0178}{tail}}
+\item 
+int \mbox{\hyperlink{class_list_a35f13d6f6507c65feeef85511db5c9cd}{count}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_list_event_a365b46c2b25f4c5bfcd6b98f6ab53d9f}\index{ListEvent@{ListEvent}!EventList@{EventList}}
+\index{EventList@{EventList}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{EventList()}{EventList()}}
+{\footnotesize\ttfamily \label{class_list_event_a365b46c2b25f4c5bfcd6b98f6ab53d9f} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_list_event}{List\+Event}} $>$ List\+Event\+::\+Event\+List (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{topic}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_list_event_a856af6e3292ab0b717bb01a75d753483}\index{ListEvent@{ListEvent}!InsertDate@{InsertDate}}
+\index{InsertDate@{InsertDate}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{InsertDate()}{InsertDate()}}
+{\footnotesize\ttfamily \label{class_list_event_a856af6e3292ab0b717bb01a75d753483} 
+bool List\+Event\+::\+Insert\+Date (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_event_a906c91f19f6f6867e069e9a925a2574c}\index{ListEvent@{ListEvent}!IsSorted@{IsSorted}}
+\index{IsSorted@{IsSorted}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{IsSorted()}{IsSorted()}}
+{\footnotesize\ttfamily \label{class_list_event_a906c91f19f6f6867e069e9a925a2574c} 
+bool List\+Event\+::\+Is\+Sorted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_event_addcad1ad7f1934e39382846ccf8c6c8b}\index{ListEvent@{ListEvent}!NameList@{NameList}}
+\index{NameList@{NameList}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{NameList()}{NameList()}}
+{\footnotesize\ttfamily \label{class_list_event_addcad1ad7f1934e39382846ccf8c6c8b} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_list}{List}}$<$ std\+::string $>$ $>$ List\+Event\+::\+Name\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_list_event_a7e39c2b2a3658b829e6357e802e2bfef}\index{ListEvent@{ListEvent}!PrintEvent@{PrintEvent}}
+\index{PrintEvent@{PrintEvent}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{PrintEvent()}{PrintEvent()}}
+{\footnotesize\ttfamily \label{class_list_event_a7e39c2b2a3658b829e6357e802e2bfef} 
+void List\+Event\+::\+Print\+Event (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_list_event_a0b687555eebd449a6ddeec40d91e3d2f}\index{ListEvent@{ListEvent}!ReplaceEvent@{ReplaceEvent}}
+\index{ReplaceEvent@{ReplaceEvent}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{ReplaceEvent()}{ReplaceEvent()}}
+{\footnotesize\ttfamily \label{class_list_event_a0b687555eebd449a6ddeec40d91e3d2f} 
+bool List\+Event\+::\+Replace\+Event (\begin{DoxyParamCaption}\item[{const int \&}]{pos}{, }\item[{const \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&}]{data}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_list_event_acabac499eeb9d7d8c1ecd45c1b8e81ae}\index{ListEvent@{ListEvent}!SearchEvent@{SearchEvent}}
+\index{SearchEvent@{SearchEvent}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{SearchEvent()}{SearchEvent()}}
+{\footnotesize\ttfamily \label{class_list_event_acabac499eeb9d7d8c1ecd45c1b8e81ae} 
+bool List\+Event\+::\+Search\+Event (\begin{DoxyParamCaption}\item[{const int \&}]{year}{, }\item[{const std\+::string \&}]{topic}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_list_event_ae6bab079917ad71ab9063441e7c8f663}\index{ListEvent@{ListEvent}!SortEvents@{SortEvents}}
+\index{SortEvents@{SortEvents}!ListEvent@{ListEvent}}
+\doxysubsubsection{\texorpdfstring{SortEvents()}{SortEvents()}}
+{\footnotesize\ttfamily \label{class_list_event_ae6bab079917ad71ab9063441e7c8f663} 
+void List\+Event\+::\+Sort\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Core/include/\mbox{\hyperlink{list_8h}{list.\+h}}\item 
+app/\+Core/source/\mbox{\hyperlink{list_8cpp}{list.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,187 @@
+\doxysection{List\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_list}{}\label{class_list}\index{List$<$ T $>$@{List$<$ T $>$}}
+
+
+{\ttfamily \#include $<$list.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_list_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_list_a5c5e27671b21b3815d4e25b953c69454}{List}} ()
+\item 
+\mbox{\hyperlink{class_list_a2b58189090f6e5ce52939c9195e59e85}{\texorpdfstring{$\sim$}{\string~}\+List}} ()
+\item 
+void \mbox{\hyperlink{class_list_a8896cebc6a34a3fb844c99e29d3e2267}{Insert\+Front}} (const T \&data)
+\item 
+void \mbox{\hyperlink{class_list_af27f945773c71ad27759ea5c16b66682}{Insert\+Back}} (const T \&data)
+\item 
+bool \mbox{\hyperlink{class_list_a6453911edf96eb29a260182a7d281d41}{Insert\+Pos}} (const int \&pos, const T \&data)
+\item 
+bool \mbox{\hyperlink{class_list_a26ba102a1d57c2fc58a89a8ea946c61c}{Del\+Pos}} (const int \&pos)
+\item 
+bool \mbox{\hyperlink{class_list_a1f91a80ff30977e8ef3811c8ec61276b}{Del\+Front}} ()
+\item 
+bool \mbox{\hyperlink{class_list_ae4917ef8a51dc26cd1f60c8e1045253e}{Del\+Back}} ()
+\item 
+bool \mbox{\hyperlink{class_list_a84df3944410032ec41670cd60d0205dd}{Del\+All}} ()
+\item 
+const int \& \mbox{\hyperlink{class_list_ac128672908e6d296f12a6496c29cdd12}{Size}} () const
+\item 
+const T \& \mbox{\hyperlink{class_list_ab848ffd160d1bc3f55ff15be01fc8d08}{Get}} (const int \&pos) const
+\item 
+const T \& \mbox{\hyperlink{class_list_af4d55cd12673848ac3690e3077d1446e}{operator\mbox{[}$\,$\mbox{]}}} (const int \&pos) const
+\item 
+bool \mbox{\hyperlink{class_list_a16e0b41c6ba00715dad1243b3cdb09c3}{Is\+Empty}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_list_a5a3156f18dbf7ae75451e28b7a524812}{Insert\+Pos}} (\mbox{\hyperlink{struct_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}ppos, const T \&data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list_a0a9e94f044b5d7be7403b158310a140e}{head}}
+\item 
+\mbox{\hyperlink{struct_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list_a460f0ca9474428fd1d4c89cc163a0178}{tail}}
+\item 
+int \mbox{\hyperlink{class_list_a35f13d6f6507c65feeef85511db5c9cd}{count}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_list_a5c5e27671b21b3815d4e25b953c69454}\index{List$<$ T $>$@{List$<$ T $>$}!List@{List}}
+\index{List@{List}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{List()}{List()}}
+{\footnotesize\ttfamily \label{class_list_a5c5e27671b21b3815d4e25b953c69454} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_list}{List}}$<$ T $>$\mbox{\hyperlink{class_list}{\+::\+List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_list_a2b58189090f6e5ce52939c9195e59e85}\index{List$<$ T $>$@{List$<$ T $>$}!````~List@{\texorpdfstring{$\sim$}{\string~}List}}
+\index{````~List@{\texorpdfstring{$\sim$}{\string~}List}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}List()}{\string~List()}}
+{\footnotesize\ttfamily \label{class_list_a2b58189090f6e5ce52939c9195e59e85} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_list}{List}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_list_a84df3944410032ec41670cd60d0205dd}\index{List$<$ T $>$@{List$<$ T $>$}!DelAll@{DelAll}}
+\index{DelAll@{DelAll}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DelAll()}{DelAll()}}
+{\footnotesize\ttfamily \label{class_list_a84df3944410032ec41670cd60d0205dd} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Del\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_ae4917ef8a51dc26cd1f60c8e1045253e}\index{List$<$ T $>$@{List$<$ T $>$}!DelBack@{DelBack}}
+\index{DelBack@{DelBack}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DelBack()}{DelBack()}}
+{\footnotesize\ttfamily \label{class_list_ae4917ef8a51dc26cd1f60c8e1045253e} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Del\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_a1f91a80ff30977e8ef3811c8ec61276b}\index{List$<$ T $>$@{List$<$ T $>$}!DelFront@{DelFront}}
+\index{DelFront@{DelFront}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DelFront()}{DelFront()}}
+{\footnotesize\ttfamily \label{class_list_a1f91a80ff30977e8ef3811c8ec61276b} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Del\+Front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_a26ba102a1d57c2fc58a89a8ea946c61c}\index{List$<$ T $>$@{List$<$ T $>$}!DelPos@{DelPos}}
+\index{DelPos@{DelPos}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DelPos()}{DelPos()}}
+{\footnotesize\ttfamily \label{class_list_a26ba102a1d57c2fc58a89a8ea946c61c} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Del\+Pos (\begin{DoxyParamCaption}\item[{const int \&}]{pos}{}\end{DoxyParamCaption})}
+
+if thead is last node, no next after it, reassign tail\Hypertarget{class_list_ab848ffd160d1bc3f55ff15be01fc8d08}\index{List$<$ T $>$@{List$<$ T $>$}!Get@{Get}}
+\index{Get@{Get}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily \label{class_list_ab848ffd160d1bc3f55ff15be01fc8d08} 
+template$<$class T$>$ \\
+const T \& \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Get (\begin{DoxyParamCaption}\item[{const int \&}]{pos}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_list_af27f945773c71ad27759ea5c16b66682}\index{List$<$ T $>$@{List$<$ T $>$}!InsertBack@{InsertBack}}
+\index{InsertBack@{InsertBack}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertBack()}{InsertBack()}}
+{\footnotesize\ttfamily \label{class_list_af27f945773c71ad27759ea5c16b66682} 
+template$<$class T$>$ \\
+void \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Insert\+Back (\begin{DoxyParamCaption}\item[{const T \&}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_a8896cebc6a34a3fb844c99e29d3e2267}\index{List$<$ T $>$@{List$<$ T $>$}!InsertFront@{InsertFront}}
+\index{InsertFront@{InsertFront}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertFront()}{InsertFront()}}
+{\footnotesize\ttfamily \label{class_list_a8896cebc6a34a3fb844c99e29d3e2267} 
+template$<$class T$>$ \\
+void \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Insert\+Front (\begin{DoxyParamCaption}\item[{const T \&}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_a6453911edf96eb29a260182a7d281d41}\index{List$<$ T $>$@{List$<$ T $>$}!InsertPos@{InsertPos}}
+\index{InsertPos@{InsertPos}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertPos()}{InsertPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_list_a6453911edf96eb29a260182a7d281d41} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Insert\+Pos (\begin{DoxyParamCaption}\item[{const int \&}]{pos}{, }\item[{const T \&}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_list_a5a3156f18dbf7ae75451e28b7a524812}\index{List$<$ T $>$@{List$<$ T $>$}!InsertPos@{InsertPos}}
+\index{InsertPos@{InsertPos}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertPos()}{InsertPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_list_a5a3156f18dbf7ae75451e28b7a524812} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Insert\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_list_1_1_node}{Node}} \texorpdfstring{$\ast$}{*}}]{ppos}{, }\item[{const T \&}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_list_a16e0b41c6ba00715dad1243b3cdb09c3}\index{List$<$ T $>$@{List$<$ T $>$}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily \label{class_list_a16e0b41c6ba00715dad1243b3cdb09c3} 
+template$<$class T$>$ \\
+bool \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_list_af4d55cd12673848ac3690e3077d1446e}\index{List$<$ T $>$@{List$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \label{class_list_af4d55cd12673848ac3690e3077d1446e} 
+template$<$class T$>$ \\
+const T \& \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const int \&}]{pos}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_list_ac128672908e6d296f12a6496c29cdd12}\index{List$<$ T $>$@{List$<$ T $>$}!Size@{Size}}
+\index{Size@{Size}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily \label{class_list_ac128672908e6d296f12a6496c29cdd12} 
+template$<$class T$>$ \\
+const int \& \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_list_a35f13d6f6507c65feeef85511db5c9cd}\index{List$<$ T $>$@{List$<$ T $>$}!count@{count}}
+\index{count@{count}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \label{class_list_a35f13d6f6507c65feeef85511db5c9cd} 
+template$<$class T$>$ \\
+int \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_list_a0a9e94f044b5d7be7403b158310a140e}\index{List$<$ T $>$@{List$<$ T $>$}!head@{head}}
+\index{head@{head}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{class_list_a0a9e94f044b5d7be7403b158310a140e} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{struct_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::head\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_list_a460f0ca9474428fd1d4c89cc163a0178}\index{List$<$ T $>$@{List$<$ T $>$}!tail@{tail}}
+\index{tail@{tail}!List$<$ T $>$@{List$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{tail}{tail}}
+{\footnotesize\ttfamily \label{class_list_a460f0ca9474428fd1d4c89cc163a0178} 
+template$<$class T$>$ \\
+\mbox{\hyperlink{struct_list_1_1_node}{Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_list}{List}}$<$ T $>$\+::tail\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Core/include/\mbox{\hyperlink{list_8h}{list.\+h}}\end{DoxyCompactItemize}

@@ -23,5 +23,4 @@ You can download the project by using the green "Code" button.
 Or by pasting the following code in your CMD:
 ```
 git clone https://github.com/pazov44/Linked-list-event.git
-
 ```

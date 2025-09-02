@@ -17,10 +17,11 @@
 *The project is an event organization application developed using C++. The core functionality is built upon a custom implementation of a linked list, which is used to manage events efficiently. Users can create, view, edit, and delete events, while the underlying linked list structure ensures dynamic memory handling and fast data manipulation. This project demonstrates practical usage of data structures in real-world applications, emphasizing both functionality and code efficiency.*
       
 ## ⚙ Installation
-```
+
 You can download the project by using the green "Code" button.
 
 Or by pasting the following code in your CMD:
+```
 git clone https://github.com/pazov44/Linked-list-event.git
 
 ```
